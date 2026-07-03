@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <div className="default-space--top mt-16 content flex flex-col">
+    <div className="default-space--top lg:mt-16 content flex flex-col">
       <div className="flex md:justify-between items-center w-full gap-x-4">
-        <div>
+        <div className="">
           <Image
             alt="about-me"
             src="/about-me.svg"
@@ -12,31 +12,33 @@ export default function AboutPage() {
             height={200}
             className="md:hidden"
           />
-          <Image
+          {/* <Image
             alt="about-me"
             src="/about-me.svg"
             width={300}
             height={200}
             className="hidden md:block"
-          />
+          /> */}
         </div>
 
-        <div className="relative">
+        <div className="relative w-full">
           <div className="md:hidden">
-            <Image
-              alt="about-me"
-              src="/profile-1.png"
-              width={200}
-              height={200}
-              className=" relative"
-            />
-            <Image
-              alt="about-me"
-              src="/profile-2.png"
-              width={120}
-              height={200}
-              className="z-10 absolute -right-1/4 -bottom-1/3"
-            />
+            <div className="relative">
+              <Image
+                alt="about-me"
+                src="/profile-1.png"
+                width={200}
+                height={200}
+                className=" relative"
+              />
+              <Image
+                alt="about-me"
+                src="/profile-2.png"
+                width={120}
+                height={200}
+                className="z-10 absolute -bottom-30 right-0"
+              />
+            </div>
           </div>
           <div className="hidden md:block">
             <Image
@@ -107,20 +109,22 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <Image
-          alt="about-me"
-          src="/get-in-touch.svg"
-          width={140}
-          height={200}
-          className="md:hidden"
-        />
-        <Image
-          alt="about-me"
-          src="/get-in-touch.svg"
-          width={300}
-          height={200}
-          className="hidden md:block"
-        />
+        <div className="w-full md:w-fit">
+          <Image
+            alt="about-me"
+            src="/get-in-touch.svg"
+            width={200}
+            height={200}
+            className="md:hidden"
+          />
+          <Image
+            alt="about-me"
+            src="/get-in-touch.svg"
+            width={300}
+            height={200}
+            className="hidden md:block"
+          />
+        </div>
       </div>
     </div>
   );
