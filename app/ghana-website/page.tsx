@@ -6,7 +6,7 @@ export default function GhanaWebsitePage() {
     <div className="content default-space--top flex flex-col gap-y-4">
       <h1 className="text-center"> Ghana website </h1>
 
-      <div className="flex gap-8 w-full items-stretch px-18 mt-4">
+      <div className="flex flex-wrap gap-8 w-full items-stretch px-18 mt-4">
         <Label text="UX/UI" />
         <Label text="Webdesign" />
         <Label text="Illustration" />

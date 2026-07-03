@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center md:h-screen">
-      <div className="sm:hidden content">
+    <div className="flex flex-col items-center justify-center  md:h-screen">
+      <div className="md:hidden content flex flex-col justify-center items-center">
         <Image
           src="/logo.svg"
           alt="Logo"
@@ -24,7 +24,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <GraphMenu className="hidden sm:flex" />
+      <GraphMenu className="hidden md:flex" />
     </div>
   );
 }

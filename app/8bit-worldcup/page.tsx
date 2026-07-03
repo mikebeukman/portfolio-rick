@@ -7,7 +7,7 @@ export default function WorldCupPage() {
     <div className="content default-space--top flex flex-col gap-y-4">
       <h1 className="text-center"> 8-bit worldcup</h1>
 
-      <div className="flex gap-8 w-full items-stretch px-18 mt-4">
+      <div className="flex-wrap flex gap-8 w-full items-stretch px-18 mt-4">
         <Label text="UX/UI" />
         <Label text="Webdesign" />
         <Label text="Illustration" />

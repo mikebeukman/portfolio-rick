@@ -59,7 +59,10 @@ export const GraphMenu = ({ className }: { className: string }) => {
         className,
       )}
     >
-      <div ref={containerRef} className="w-2/3 aspect-square absolute p-2">
+      <div
+        ref={containerRef}
+        className="w-1/2 md:w-2/3 lg:w-1/2 aspect-square absolute p-2"
+      >
         {ready &&
           lines.map((line, i) => (
             <Line

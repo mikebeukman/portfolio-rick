@@ -21,7 +21,7 @@ body {
 
 @layer base {
   .content {
-    @apply max-w-screen-xl mx-auto px-4;
+    @apply max-w-screen-xl w-full mx-auto px-4;
   }
   
   .default-space--top {
