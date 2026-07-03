@@ -13,10 +13,10 @@ export const MenuItem = ({
   return (
     <Link
       href={href}
-      className={cn("flex items-center gap-1 bg-white p-2", className)}
+      className={cn("flex items-center gap-1 bg-white", className)}
     >
       <div className="w-3 h-3 bg-[#001BF4] rounded-full" />
-      {label}
+      <span className="underline md:text-xl">{label}</span>
     </Link>
   );
 };

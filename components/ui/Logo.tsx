@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Logo = () => {
   return (
-    <div className="flex flex-col z-10 items-center p-4 px-8 rounded-full bg-white shadow-white shadow-[0_0_30px_8px_rgba(0,0,0,0.35)]">
+    <div className="flex flex-col z-10 items-center rounded-full bg-white shadow-white ">
       {/* Mobile */}
       <Image
         src="/logo.svg"

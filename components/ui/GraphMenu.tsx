@@ -4,35 +4,12 @@ import { useEffect, useRef, useState } from "react";
 import { Line } from "./Line";
 import { MenuItem } from "../actions/MenuItem";
 import { Logo } from "./Logo";
-
-const items = [
-  { label: "ghana website", href: "/", className: "absolute right-20 -top-4" },
-  {
-    label: "az story",
-    href: "/az-story",
-    className: "absolute right-0 top-20",
-  },
-  {
-    label: "coffee website",
-    href: "/",
-    className: "absolute -right-8 bottom-20",
-  },
-  {
-    label: "energy website",
-    href: "/",
-    className: "absolute right-1/2 -bottom-5 translate-x-1/2",
-  },
-  {
-    label: "8-bit world cup",
-    href: "/",
-    className: "absolute -left-5 bottom-10",
-  },
-  { label: "recycle project", href: "/", className: "absolute -left-7 top-15" },
-];
+import { cn } from "@/utils/cn";
+import { items } from "@/utils/constants";
 
 type LineData = { length: number; angle: number };
 
-export const GraphMenu = () => {
+export const GraphMenu = ({ className }: { className: string }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [lines, setLines] = useState<LineData[]>([]);
@@ -76,8 +53,13 @@ export const GraphMenu = () => {
   const ready = lines.some((line) => line.length > 0);
 
   return (
-    <div className="relative w-full flex flex-col items-center justify-center">
-      <div ref={containerRef} className="w-4/5 aspect-square absolute p-2">
+    <div
+      className={cn(
+        "relative w-full flex flex-col items-center justify-center content",
+        className,
+      )}
+    >
+      <div ref={containerRef} className="w-2/3 aspect-square absolute p-2">
         {ready &&
           lines.map((line, i) => (
             <Line

@@ -1,7 +1,6 @@
 import { ImageGrid } from "@/components/ui/ImageGrid";
 import { Label } from "@/components/ui/Label";
 import { Youtube } from "@/components/ui/Youtube";
-import Image from "next/image";
 
 export default function AzStoryPage() {
   return (
@@ -25,9 +24,19 @@ export default function AzStoryPage() {
         world's top-tier youth academies.
       </p>
 
-      <div className="grid grid-cols-3 gap-4">
-        <Youtube videoId="yoPXbaYHAiY" />
-        <ImageGrid className="col-span-1" />
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <Youtube videoId="yoPXbaYHAiY" className="col-span-1 lg:col-span-2" />
+        <ImageGrid
+          images={[
+            "/az-1.png",
+            "/az-2.png",
+            "/az-3.png",
+            "/az-4.png",
+            "/az-5.png",
+            "/az-6.png",
+          ]}
+          className="col-span-1"
+        />
       </div>
     </div>
   );

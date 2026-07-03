@@ -1,6 +1,14 @@
-export const Youtube = ({ videoId }: { videoId: string }) => {
+import { cn } from "@/utils/cn";
+
+export const Youtube = ({
+  videoId,
+  className,
+}: {
+  videoId: string;
+  className?: string;
+}) => {
   return (
-    <div className="relative aspect-video w-full col-span-2">
+    <div className={cn("relative aspect-video w-full", className)}>
       <iframe
         src={`https://www.youtube.com/embed/${videoId}`}
         title="YouTube video player"

@@ -28,9 +28,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${bebasNeue.variable} ${inter.variable} h-full antialiased`}
+      className={`${bebasNeue.variable} ${inter.variable} h-full antialiased w-full`}
     >
-      <body className="min-h-full flex flex-col content">
+      <body className="min-h-full flex flex-col">
         <Navigation />
         {children}
       </body>
