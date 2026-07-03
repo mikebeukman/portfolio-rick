@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center mt-40 md:mt-0 md:h-screen">
+    <div className="flex flex-col items-center justify-center md:h-screen">
       <div className="sm:hidden content">
         <Image
           src="/logo.svg"
