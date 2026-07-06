@@ -20,7 +20,7 @@ export const Logo = () => {
         height={150}
         className="hidden md:block"
       />
-      <div className="hidden md:flex text-2xl font-bold font-display -mt-8 justify-between w-full px-1">
+      <div className="hidden md:flex text-2xl font-display -mt-8 justify-between w-full px-1">
         <span>UX / UI </span>
         <span>Designer</span>
       </div>

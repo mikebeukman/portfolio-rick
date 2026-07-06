@@ -80,7 +80,7 @@ export const GraphMenu = ({ className }: { className: string }) => {
             }}
             className={`${item.className} z-10`}
           >
-            <MenuItem href={item.href} label={item.label} />
+            <MenuItem href={item.href} index={i + 1} label={item.label} />
           </div>
         ))}
       </div>
