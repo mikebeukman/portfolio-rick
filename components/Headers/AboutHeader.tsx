@@ -17,7 +17,7 @@ export const AboutHeader = () => {
 
       {/* Right images */}
       <div className="relative w-full max-w-md flex justify-end">
-        <div className="w-32 sm:w-40 md:w-48">
+        <div className="w-48 sm:w-56 md:w-64 lg:w-72">
           <Image
             src="/profile-1.png"
             alt="Profile 1"
@@ -27,11 +27,11 @@ export const AboutHeader = () => {
           />
         </div>
 
-        <div className="w-28 sm:w-32 md:w-36 -ml-16 sm:-ml-20 md:-ml-24 mt-12 sm:mt-16 md:mt-20">
+        <div className="w-28 mt-24 sm:w-28 md:w-32 -ml-16 sm:-ml-20 md:-ml-24 sm:mt-28 md:mt-32 lg:mt-40">
           <Image
             src="/profile-2.png"
             alt="Profile 2"
-            width={200}
+            width={180}
             height={200}
             className="w-full h-auto"
           />

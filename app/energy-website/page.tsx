@@ -22,11 +22,12 @@ export default function EnergyWebsitePage() {
       <div className="grid md:grid-cols-3 gap-0 md:gap-4 place-items-center">
         <Image
           className="mt-4 h-full"
-          src="/energy-3.png"
+          src="/energy-1.png"
           alt="ghana website"
           width={1000}
           height={1000}
         />
+
         <Image
           className=" mt-4 h-full"
           src="/energy-2.png"
@@ -36,7 +37,7 @@ export default function EnergyWebsitePage() {
         />
         <Image
           className="mt-4 h-full"
-          src="/energy-1.png"
+          src="/energy-3.png"
           alt="ghana website"
           width={1000}
           height={1000}
